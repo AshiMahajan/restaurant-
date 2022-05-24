@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Meal Verse</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+ 
+                                                         <!--STYLES HERE-->
+    
+<style>
+  body {background-color: rgb(255, 255, 255);}
+  button {font-size: 20px; background-color: rgb(0, 0, 0); outline: none; color: rgb(255, 255, 255);}
+  .backgroundLogin {margin: 0px; background-image: url(lily-banse--YHSwy6uqvk-unsplash.jpg);
+   background-size: 1600px; padding-bottom: 500px; position: relative; background-repeat: no-repeat;}
+    
+  p7 {float: right; margin-right: 90px; margin-top: 10px; font-family: 'Alegreya SC', serif;}
+  p8 {float: right; margin-top: 10px;}
+  p9 {font-size: 45px; font-family: cursive; text-shadow: 0px -2px 2px red; text-decoration: underline; text-decoration-color: black;
+   margin-left: 10px;}
+  p11 {color: #FF2E00;}
+  
+  span {font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic;
+   padding-top: 0px; color: rgb(255, 255, 255); background-color: rgb(245, 182, 21); color: white; border: 0px; padding: 10px;
+   border-radius: 30px; text-decoration: underline; text-decoration-color: tomato;}
+  .right{
+    position: absolute; margin-top: 442.2px; text-shadow: 0px 0px 8px blue; margin-left: 1300px;}
+
+  .left{
+    position: absolute; margin-top: 442.2px; margin-left: 25px; text-shadow: 0px 0px 8px blue;}
+
+  .menu {color: rgb(255, 255, 255); text-align: center; font-size: 45px; font-family: 'Macondo', cursive;
+   border-style: double; border-bottom: #f1f1f1; border-color: rgb(255, 0, 0); margin-top: 0 px; background-color: rgb(0, 0, 0); margin-left: -2px;
+   margin-right: -1px;}
+  
+  .header {text-align: center; font-size: 45px; font-family: 'Marck Script', cursive; font-style: oblique}
+
+  .about {font-size: 20px; font-family: 'Times New Roman', Times, serif; text-decoration: underline; text-decoration-color: black;
+   margin-left: 30px; }
+
+  .social {font-size: 20px; font-family: 'Times New Roman', Times, serif; text-decoration: underline; text-decoration-color: black;
+   margin-left: 150px; box-sizing: border-box;}
+
+  ._1www {margin-left: 260px; box-sizing: border-box; display: block; line-height: 2; font-family: 'Merriweather', serif; font-size: 16px; font-weight: 400;
+   padding: 0px; color: #4267b2;}
+
+  ._12www {margin-left: 260px; box-sizing: border-box; display: block; line-height: 2; font-family: 'Merriweather', serif; font-size: 16px; font-weight: 400;
+   padding: 0px; color: #1da1f2;}
+
+  ._w1www {margin-left: 260px; box-sizing: border-box; display: block; line-height: 2; font-family: 'Merriweather', serif; font-size: 16px; font-weight: 400;
+   padding: 0px; color: red;}
+  ._2ww {color: #FF2E00;}
+
+  .about, .social {display: inline;}
+
+  .href {box-sizing: border-box;}
+
+  .top {font-size: 18px; margin-right: 80px;margin-top: -20px; text-align: right; place-self: end; position: initial; bottom: 20px;}
+
+  .mon {float: left; margin-left: 80px; font-family: 'Stalinist One', cursive; font-size: 20px;}
+  .wed {float: right; margin-right: 80px; font-family: 'Stalinist One', cursive; font-size: 20px;}
+  .fri {float: left; margin-left: 395px; font-family: 'Stalinist One', cursive; font-size: 20px;}
+  .sat {float: right; margin-right: 450px; font-family: 'Stalinist One', cursive; font-size: 20px;}
+
+  .copy {margin-bottom: 0px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(179, 174, 174);}
+
+  .collapsible {background-color: rgb(91, 82, 82); color: rgb(255, 255, 255); cursor: pointer; padding-left: 0px; width: 100%; border-style: solid; border-color: black; text-align: left; outline: none; font-size: 25px; font-family: 'Shadows Into Light', cursive;
+   margin-left: 0.4px; margin-right: 5px; border-radius: 15px; text-align: center;}
+
+  .active, .collapsible:hover {background-color: #555;}
+
+  .ncontent   {padding: 0 18px; display: none; overflow: hidden; background-color: #f1f1f1;}
+  .scontent   {padding: 0 18px; display: none; overflow: hidden; background-color: #f1f1f1;}
+  .ccontent   {padding: 0 18px; display: none; overflow: hidden; background-color: #f1f1f1;}
+  .noncontent {padding: 0 18px; display: none; overflow: hidden; background-color: #f1f1f1;}
+  .bcontent   {padding: 0 18px; display: none; overflow: hidden; background-color: #f1f1f1;}
+  .burcontent {padding: 0 18px; display: none; overflow: hidden; background-color: #f1f1f1;}
+
+  .chole {font-family: 'Sigmar One', cursive; font-weight: bolder; font-size: 25px; margin-top: 10px; margin-left: 180px; float: left; box-sizing: border-box; display: block;}
+  .Idli {font-family: 'Sigmar One', cursive; font-weight: bolder; font-size: 25px; margin-top: 10px; margin-left: 180px; float: left; box-sizing: border-box; display: block; }
+  .manch {font-family: 'Sigmar One', cursive; font-weight: bolder; font-size: 25px; margin-top: 10px; margin-left: 180px; float: left; box-sizing: border-box; display: block;}
+  .chick {font-family: 'Sigmar One', cursive; font-weight: bolder; font-size: 25px; margin-top: 10px; margin-left: 180px; float: left; box-sizing: border-box; display: block;}
+  .beve {font-family: 'Sigmar One', cursive; font-weight: bolder; font-size: 25px; margin-top: 10px; margin-left: 180px; float: left; box-sizing: border-box; display: block;}
+  .bur {font-family: 'Sigmar One', cursive; font-weight: bolder; font-size: 25px; margin-top: 10px; margin-left: 180px; float: left; box-sizing: border-box; display: block;}
+
+  .w3-round {display: block; box-sizing: border-box; width: 70px; height: 30px; font-size: 20px; margin-right: 400px; margin-top: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+  a {box-sizing: border-box; width: 100px; padding: 0px; font-size: 17px; margin-right: -350px; margin-top: 8px;}
+  .w3-grey, .table {display: inline}
+  .w3-grey {font-size: 30px;}
+
+  img {margin-left: 10px; width: 5%; margin-top: -30px;}
+
+  .table {font-size: 30px; font-family: monospace; font-weight: 400; line-height: 2; text-align: center; padding: 10px; margin-top: -30px;}
+  .reserve {padding: 20px; box-sizing: border-box; line-height: 2;}
+  .notify {margin-left: 35px; margin-top: 30px; font-size: 18px; font-weight: 300; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+  .noww {text-decoration: underline overline; text-decoration-color: yellow; font-size: 35px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; box-sizing: border-box; padding: 10px; margin-bottom: -20px;}
+  .w3-large, .notify {display: inline; box-sizing: border-box; contain: content;}
+  .w3-large {float: left; margin-left: 30px; margin-top: -5px;}
+
+  .number {margin-right: 20px;}
+  .inputsub {text-align: center; font-size: 18px;}
+  .gototop {text-decoration: underline; text-align: right ;margin-right: 400px; margin-top: -10px;}
+  .footer {background-color: rgb(255, 255, 255);}
+  .cuisineavail {margin-top: -14.9px;}
+
+  input[type=text],
+	input[type=password] { width: 100%; padding: 10px 10px; margin: 8px 0; display: inline-block; border: 2px solid rgb(0, 0, 0); box-sizing: border-box;}
+
+	.cancelbtn {padding: 5px 5px; background-color: #FF2E00;}
+  .signupbtn {padding: 5px; background-color: green;}
+ 
+	.cancelbtn, .signupbtn {float: left; width: 50%}
+
+	.container {padding: 12px;}
+
+	
+	.modal {display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0.4); padding-top: 60px;}
+
+	.modal-content {background-color: #ffffff; margin: 5% auto 15% auto; border: 1px solid #888; width: 40%;}
+
+	.close {position: absolute; right: 35px; top: 15px; color: #000; font-size: 40px; font-weight: bold;}
+
+	.close:hover, .close:focus {color: red; cursor: pointer;}
+	
+	.clearfix::after { content: ""; clear: both; display: table;}
+	
+	@media screen and (max-width: 300px) {.cancelbtn, .signupbtn {width: 100%;}}
+
+  .yourmail {text-align: center;}
+
+</style>
+                                                         
+                                                         <!--STYLES HERE-->
+  </head>
+<body>
+  <div class="backgroundLogin">     
+
+   <p7><button class="open-button w3-border w3-border-blue w3-hover-border-yellow" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></p7> 
+
+	  <div id="id01" class="modal">
+		  <span16 onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span16>
+		  <form class="modal-content animate" action="/action_page.php">
+			 <div class="container">
+        <div class="yourmail">
+				<label><b>Email</b></label></div>
+				<input type="text" placeholder="Enter Email" name="email" required>
+ <br>
+ <hr>
+        <div class="yourmail">
+				<label><b>Password</b></label></div>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+ <br>
+ <hr>
+				<div class="yourmail">
+        <label><b>Repeat Password</b></label></div>
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+ <br>
+ <hr>
+				<input type="checkbox"> Remember me
+ <hr>
+				 <p>By creating an account you agree to our <a href="#" class="_2ww">Terms & Privacy</a>.</p>
+
+				 <div class="clearfix">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<button type="submit" class="signupbtn">Sign Up</button>
+				 </div>
+		   </div>
+		  </form>
+	  </div>
+
+      <span class="left">OnDoor Delivery &star;</span>
+      <span class="right">&star; InDoor Dining</span>
+  </div>
+  <div class="menu">                         
+    <p>Menu</p>
+  </div>
+
+  <script>
+      var modal = document.getElementById('id01');
+  
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  </script>
+
+  <div class="cuisineavail">
+   <button type="button" class="collapsible">North Indian Cuisine</button>
+    <div class="ncontent"><span11 class="w3-round w3-right w3-tag w3-blue">₹70</span11> <a class=" w3-right w3-tag w3-btn w3-green" href="#">Order</a>
+    <span5 class="chole">Chole Bhature</span5>
+    </div>
+ <br>
+  </div>
+  <div>
+    <button type="button" class="collapsible">South Indian Cuisine</button>
+    <div class="scontent"><span11 class="w3-round w3-right w3-tag w3-blue">₹50</span11> <a class=" w3-right w3-tag w3-btn w3-green" href="#">Order</a>
+    <span6 class="Idli">Idli Sambhar</span6>
+    </div>
+ <br>
+  </div>
+  <div>
+    <button type="button" class="collapsible">Indian Chinese Cuisine</button>
+    <div class="ccontent"><span11 class="w3-round w3-right w3-tag w3-blue">₹40</span11> <a class=" w3-right w3-tag w3-btn w3-green" href="#">Order</a>
+    <span7 class="manch">Manchurian</span7>
+    </div>
+ <br>
+  </div>
+  <div>
+    <button type="button" class="collapsible">Non- Veg</button>
+    <div class="noncontent"><span11 class="w3-round w3-right w3-tag w3-blue">₹120</span11> <a class=" w3-right w3-tag w3-btn w3-green" href="#">Order</a>
+    <span8 class="chick">Kadhai Chicken</span8>
+    </div>
+ <br>
+  </div>
+  <div>
+    <button type="button" class="collapsible">Beverages</button>
+    <div class="bcontent"><span11 class="w3-round w3-right w3-tag w3-blue">₹20</span11> <a class=" w3-right w3-tag w3-btn w3-green" href="#">Order</a>
+    <span9 class="beve">Mountain Dew</span9>
+    </div>
+ <br>
+  </div>
+  <div>
+    <button type="button" class="collapsible">Fast Food</button>
+    <div class="burcontent"><span11 class="w3-round w3-right w3-tag w3-blue">₹40</span11> <a class=" w3-right w3-tag w3-btn w3-green" href="#">Order</a>
+    <span10 class="bur">Burger</span10>
+    </div>
+ <br>
+  </div>
+
+  <script>
+   var coll = document.getElementsByClassName("collapsible");
+   var i;
+  
+   for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+  <br>
+  <hr>
+  <br>
+    <div class="table">
+      <p3>Reserve a Table</div><span13 class="noww"><i>NOW!!</p3></i></span13>
+    </div>
+  <br>
+  <br>
+    <div class="notify">
+      <p4><span12 class="w3-badge w3-grey w3-large w3-padding">NOTE</span12></p4>
+      <p4>Notify us by filling your details, we will call you for confirmation within 10 minutes!!</p4>
+    </div>
+  <br>
+  <br>
+  <br>
+
+    <div class="reserve">
+      <form action="/action_page.php">
+          <span14 class="yourname">
+          <input class="w3-container w3-input w3-padding-16" name="name" id="yname" placeholder="Name" required><br>
+          </span14>
+  <br>
+          <span15 class="number">
+          <input class="w3-container w3-input w3-padding-16" name="quantity" min="1" max="20" placeholder="1-20" required><br>
+          </span15>
+  <br>
+          <span14 class="dateof">
+          <input class="w3-container w3-input w3-padding-16" type="datetime-local" id="visittime" name="visittime" required><br>
+          </span14>
+          <span15 class="require">
+          <label for="sreq"></label><br>
+          <input class="w3-container w3-input w3-padding-16" id="req" placeholder="Special Requirement?"><br>
+          </span15>
+  <br>
+          <span14 class="enterphone">
+          <input class="w3-container	w3-input w3-padding-16" type="tel" id="phone" placeholder="Mobile Number" name="phone" pattern="[0-9]{10}" required><br><br>
+          </span14> 
+             <div class="inputsub">
+                 <input type="submit" class="w3-container w3-cursive w3-tag-padding w3-tag w3-yellow w3-container w3-border w3-border-red" value="Notify Us.">
+             </div>
+      </form>
+    </div>
+  <br>
+  <hr>
+    <div class="open">
+        <p9>Opening Hours</p9><img src="clocky.png" alt="time">
+    </div>
+  <br>
+    <span1 class="mon">
+    Monday & Tuesday- 9:00 to 23:00
+    </span1>
+    <span2 class="wed">
+    Wednesday & Thursday- 10:00 to 23:00            <!--changes here, a bit-->
+    </span2>
+  <br>
+  <br>
+  <br>
+    <span3 class="fri">
+    Friday- 8:00 to 23:00
+    </span3>
+    <span4 class="sat">
+    Saturday & Sunday- 10:00 to 00:00
+    </span4>
+  <br>
+  <br>
+  <hr>
+    <div class="header">
+      <p10>Meal Verse</p10>
+    </div>
+  <br>
+ <footer>
+    <div class="footer">
+          <div class="about">
+           <p6>
+              About Us
+           </p6>
+          </div>
+          <div class="social">
+              Social
+          </div>
+ 
+        <a href="" class="_1www" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="" target="_blank" class="_12www">Twitter</a>
+        <a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank" class="_w1www">Youtube</a>
+    </div>
+
+ </footer>
+
+  <hr>
+  <br>
+    <div class="gototop">
+        <a href="">TOP</a>
+    </div>
+    <div class="copy">
+       2022-xxxx &copy;
+    </div> 
+</body>
+</html>
